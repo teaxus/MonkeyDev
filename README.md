@@ -45,15 +45,15 @@ Plese Read Wiki: [Wiki](https://github.com/AloneMonkey/MonkeyDev/wiki)
 3、
 问题：打不出可执行程序，clean重编，手机电脑重启，后又正常(Executable Not Found....Check your project settings to ensure that a valid executable will be built.) 
 解决办法：在项目文件的packaging->Info.plist File添加info.plist路径（“你的app名字/Info.plist”） 
-![image](./doc/img/ExecutableNotFoundFixDemo.jpg)
+![image](https://raw.githubusercontent.com/teaxus/MonkeyDev/master/doc/img/ExecutableNotFoundFixDemo.jpg)
 </li>
 <li>
 4、
 问题：‘Cycript/Cycript.h’ file not found
-![image](doc/img/CycriptFileNotFound.jpg)
+![image](https://raw.githubusercontent.com/teaxus/MonkeyDev/master/doc/img/CycriptFileNotFound.jpg)
 解决办法：找到Cycript.framework，一般在”/Users/zego/opt/theos/vendor/lib”里面, 把这个东西复制到工程里面或者”/Users/zego/opt/MonkeyDev/Frameworks/“下面。把Cycript.framework拖进工程，链接到app target上面，注意链接顺序要在lib之前。
-![image](doc/img/CycriptFileNotFoundFixDemo1.jpg)
-![image](doc/img/CycriptFileNotFoundFixDemo2.jpg)
+![image](https://raw.githubusercontent.com/teaxus/MonkeyDev/master/doc/img/CycriptFileNotFoundFixDemo1.jpg)
+![image](https://raw.githubusercontent.com/teaxus/MonkeyDev/master/doc/img/CycriptFileNotFoundFixDemo2.jpg)
 </li>
 </ul>
 
