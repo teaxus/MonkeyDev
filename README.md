@@ -1,5 +1,6 @@
 # MonkeyDev
 
+**免责声明: 软件仅供技术交流，禁止用于商业及非法用途，如产生法律纠纷与本人无关。**
 A modified version of iOSOpenDev
 
 * easy to install
@@ -42,24 +43,25 @@ Plese Read Wiki: [Wiki](https://github.com/AloneMonkey/MonkeyDev/wiki)
 </li>
 <li>
 3、
-问题：打不出可执行程序，clean重编，手机电脑重启，后又正常(Executable Not Found....Check your project settings to ensure that a valid executable will be built.) <img src="./doc/img/ExecutableNotFound.jpg" />
-解决办法：在项目文件的packaging->Info.plist File添加info.plist路径（“你的app名字/Info.plist”） <img src="./doc/img/ExecutableNotFoundFixDemo.jpg" />
+问题：打不出可执行程序，clean重编，手机电脑重启，后又正常(Executable Not Found....Check your project settings to ensure that a valid executable will be built.) 
+<img src="./" />
+解决办法：在项目文件的packaging->Info.plist File添加info.plist路径（“你的app名字/Info.plist”） 
+![image](doc/img/ExecutableNotFoundFixDemo.jpg)
 </li>
 <li>
 4、
 问题：‘Cycript/Cycript.h’ file not found
-<img src="./doc/img/CycriptFileNotFound.jpg" />
+![image](doc/img/CycriptFileNotFound.jpg)
 解决办法：找到Cycript.framework，一般在”/Users/zego/opt/theos/vendor/lib”里面, 把这个东西复制到工程里面或者”/Users/zego/opt/MonkeyDev/Frameworks/“下面。把Cycript.framework拖进工程，链接到app target上面，注意链接顺序要在lib之前。
-<img src="./doc/img/CycriptFileNotFoundFixDemo1.jpg" />
-<img src="./doc/img/CycriptFileNotFoundFixDemo2.jpg" />
+![image](doc/img/CycriptFileNotFoundFixDemo1.jpg)
+![image](doc/img/CycriptFileNotFoundFixDemo2.jpg)
 </li>
 </ul>
 
 
 
-
-**免责声明: 软件仅供技术交流，禁止用于商业及非法用途，如产生法律纠纷与本人无关。**
-
+<br>
+<br>
 <br>
 
 <h2>《iOS应用逆向与安全》出版啦！！！</h2>
