@@ -44,9 +44,8 @@ Plese Read Wiki: [Wiki](https://github.com/AloneMonkey/MonkeyDev/wiki)
 <li>
 3、
 问题：打不出可执行程序，clean重编，手机电脑重启，后又正常(Executable Not Found....Check your project settings to ensure that a valid executable will be built.) 
-<img src="./" />
 解决办法：在项目文件的packaging->Info.plist File添加info.plist路径（“你的app名字/Info.plist”） 
-![image](doc/img/ExecutableNotFoundFixDemo.jpg)
+![image](./doc/img/ExecutableNotFoundFixDemo.jpg)
 </li>
 <li>
 4、
