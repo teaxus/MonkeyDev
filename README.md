@@ -27,6 +27,37 @@ Plese Read Wiki: [Wiki](https://github.com/AloneMonkey/MonkeyDev/wiki)
 
 
 
+<br>
+<h2>常见问题</h2>
+<ul>
+<li>
+1、
+问题：编译报错，找不到libstdc++库（file not found: /usr/lib/libstdc++.dylib）
+解决方式：https://github.com/devdawei/libstdc- 然后放到xcode里或者执行install-xcode_11+.sh
+</li>
+<li>
+2、
+问题：运行crash，在fishhook.c里面
+解决办法：下载最新的fishhook，替换工程中的文件https://github.com/facebook/fishhook
+</li>
+<li>
+3、
+问题：打不出可执行程序，clean重编，手机电脑重启，后又正常(Executable Not Found....Check your project settings to ensure that a valid executable will be built.) <img src="./doc/img/ExecutableNotFound.jpg" />
+解决办法：在项目文件的packaging->Info.plist File添加info.plist路径（“你的app名字/Info.plist”） <img src="./doc/img/ExecutableNotFoundFixDemo.jpg" />
+</li>
+<li>
+4、
+问题：‘Cycript/Cycript.h’ file not found
+<img src="./doc/img/CycriptFileNotFound.jpg" />
+解决办法：找到Cycript.framework，一般在”/Users/zego/opt/theos/vendor/lib”里面, 把这个东西复制到工程里面或者”/Users/zego/opt/MonkeyDev/Frameworks/“下面。把Cycript.framework拖进工程，链接到app target上面，注意链接顺序要在lib之前。
+<img src="./doc/img/CycriptFileNotFoundFixDemo1.jpg" />
+<img src="./doc/img/CycriptFileNotFoundFixDemo2.jpg" />
+</li>
+</ul>
+
+
+
+
 **免责声明: 软件仅供技术交流，禁止用于商业及非法用途，如产生法律纠纷与本人无关。**
 
 <br>
